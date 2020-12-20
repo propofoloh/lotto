@@ -10,11 +10,13 @@ Lotto
 <!DOCTYPE html>
 <html>
   <head>
+      <script data-ad-client="ca-pub-1107226096880396" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
 
       <title>Lotto</title>
       <style>
-	#get-numbers-button {
+	#get-numbers-button-open {
 		font-weight:bold;
 		font-size:22px;
 		padding:10px;
@@ -65,17 +67,44 @@ Lotto
   </head>
   <body>
       <h3>로또 번호 생성기</h3>
-      <input id="get-numbers-button" type="button" value="번호 생성" />
+      <input id="get-numbers-button-open" type="button" value="번호 생성" />
      &nbsp;&nbsp;<b>생성할 게임 수:</b>&nbsp;<input id="combinations" type="text" value="5" size="2" />
       
-      <br>
-      	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <div id="modal">
+   
+    <div class="modal_content">
+        <h2>AD 광고 제목</h2>
+        
+       <div>
+                   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
      data-ad-format="fluid"
      data-ad-client="ca-pub-1107226096880396"
-     data-ad-slot="2385569158"></ins>
+     data-ad-slot="2284241198"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+       
+        <button type="button" id="modal_close_btn">로또 번호 보기</button>
+       
+    </div>
+   
+    <div class="modal_layer"></div>
+</div>
+      <script>
+    document.getElementById("get-numbers-button-open").onclick = function() {
+        document.getElementById("modal").style.display="block";
+    }
+   
+    document.getElementById("modal_close_btn").onclick = function() {
+        document.getElementById("modal").style.display="none";
+    }   
+</script>
+      
+
       
       <div id="numbers-display"></div>
       <script src="jquery-2.1.4.min.js"></script>
@@ -89,7 +118,7 @@ Lotto
 		var delay = 100;
 		var enableSound = true;
 		
-		$("#get-numbers-button").click(function(){
+		$("#get-numbers-button-open").click(function(){
 			$("#numbers-display").html("");
 			
 			if(enableSound)
@@ -159,7 +188,16 @@ Lotto
 		}
 	});      
       </script>
-      
+                   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1107226096880396"
+     data-ad-slot="2284241198"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
      
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox_8ztl" style="margin-top:100px"> <h3>로또 번호 생성기 1등 당첨 확률 UP!!!</h3></div>
